@@ -1,0 +1,5 @@
+pypdf
+langchain
+chromadb-client 
+pytest
+boto3
