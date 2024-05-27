@@ -33,7 +33,6 @@ def load_documents():
     document_loader = PyPDFDirectoryLoader(DATA_PATH)
     return document_loader.load()
 
-
 def split_documents(documents: list[Document]):
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=800,
@@ -46,7 +45,7 @@ def split_documents(documents: list[Document]):
 
 def add_to_chroma(chunks: list[Document]):
     # Load the existing database.
-    db = Chroma(persist_directory=CHROMA_PATH, collection_name='testeRAG',client=HttpClient(host='localhost', port=8000), embedding_function=get_embedding_function())
+    db = Chroma(persist_directory=CHROMA_PATH, collection_name='LocalRAG',client=HttpClient(host='localhost', port=8000), embedding_function=get_embedding_function())
 
     # Calculate Page IDs.
     chunks_with_ids = calculate_chunk_ids(chunks)
@@ -66,6 +65,7 @@ def add_to_chroma(chunks: list[Document]):
         print(f"👉 Adding new documents: {len(new_chunks)}")
         new_chunk_ids = [chunk.metadata["id"] for chunk in new_chunks]
         db.add_documents(new_chunks, ids=new_chunk_ids)
+        db.persist()
     else:
         print("✅ No new documents to add")
 
