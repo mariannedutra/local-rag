@@ -1,10 +1,11 @@
-import chromadb.utils.embedding_functions as embedding_functions
+from langchain_community.embeddings import OllamaEmbeddings
 
 def get_embedding_function():
 
-    embeddings= embedding_functions.OllamaEmbeddingFunction(
-    url="http://localhost:11434/api/embeddings",
-    model_name="nomic-embed-text",
+    embeddings = OllamaEmbeddings(
+        base_url="http://localhost:11434",
+        model="nomic-embed-text:v1.5",
+
     )
-    
+
     return embeddings
