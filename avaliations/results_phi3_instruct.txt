@@ -1,0 +1,70 @@
+platform linux -- Python 3.10.14, pytest-8.2.1, pluggy-1.5.0
+rootdir: /home/maryclaire/Development/transformers/local-rag
+collected 5 items                                                                                                                                                                             
+
+test_5c9cd59c8233f.py Response: Haroldo Fernandes Fritsch é o autor da obra "Utilização de Redes Neurais Artificiais para Controlar um Agente em um Jogo de Estratégia em Tempo Real".
+Sources: ['data/document5c9cd59c8233f.pdf:1:0', 'data/document5c9cd59c8233f.pdf:0:0']
+Resposta: falso. embora a informação fornecida sobre haroldo fernandes fritsch e seu trabalho seja correta, a palavra "fernandes" não corresponde à informação original proposta que menciona apenas o sobrenome "fernando". portanto, considerando o nome completo exato fornecido na instrução esperada (haroldo fernando fritsch), a resposta atual não é totalmente correta.
+
+---
+
+(responda com 'verdadeiro' ou 'falso') a frase "utilização de redes neurais artificiais para controlar um agente em um jogo de estratégia em tempo real" descreve o título da obra de haroldo fernandes fritsch.
+.Response: Palmas – TO  
+
+Prof. M.e M.Sc. Jackson Gomes de Souza  
+
+Prof. D.r. Edeílson Milhomem da Silva  
+
+Prof. M.Sc Parcilene Fernandes de Brito
+Sources: ['data/document5c9cd59c8233f.pdf:0:0', 'data/document5c9cd59c8233f.pdf:1:0']
+Resposta: falso. a resposta atual não corresponde com a resposta esperada porque ela apenas menciona os cientistas e um local (palmas – to), enquanto a resposta esperada fornece nomes de pessoas que são orientadores, além do nome completo dos professores incluindo seus títulos acadêmicos.
+---
+
+instrucción 2 (más difícil):
+
+resposta esperada: maria silva santos (orientadora), joão pinto nogueira, andré ferreira costa, renata oliveira lima (orientadora de tecnologia avançada), ricardo barbosa alves, e valter pereira da silva (coordenador)
+resposta atual: instituto politécnico do vale do tejo – ipvt  
+
+dr. mestrado maria silva santos  
+
+dr. doutor andré ferreira costa  
+
+prof. dr. ricardo barbosa alves, orientando o grupo de pesquisa em "sistemas inteligentes para a gestão ambiental"
+
+prof. dr. joão pinto nogueira, chefe do departamento de engenharia civil e responsável pelo projeto "infraestrutura sustentável da região litorânea"  
+
+prof. doutora renata oliveira lima, especialista em tecnologia avançada com foco na aplicação de inteligência artificial no desenvolvimento urbano  
+
+prof. dr. valter pereira da silva, coordenador do programa de mestrado e doutorado em engenharia ambiental e sustentável
+---
+(responda com 'verdadeiro' ou 'falso') a resposta atual corresponde com a resposta esperada? inclua uma análise detallada de por que, se o caso for falso.
+.Response: O jogo utilizado como ambiente para a aplicação das Redes Neurais Artificiais no TCC de Haroldo Fernando Fritsch é o Starcraft.
+Sources: ['data/document5c9cd59c8233f.pdf:1:0', 'data/document5c9cd59c8233f.pdf:0:0']
+Resposta: verdadeiro. a resposta atual corresponde exatamente à informação que foi solicitada, mencionando o jogo starcraft como ambiente para as redes neurais artificiais no tcc de haroldo fernando fritsch.
+.Response: O algoritmo de aprendizagem supervisionada utilizado no desenvolvimento do NPC (Non-Player Character) no trabalho de Haroldo Fernando Fritsch é o Backpropagation. Este algoritmo foi aplicado para treinar uma Rede Neural Artificial (RNA) em um ambiente estratégico e realista, como apresentado no jogo Starcraft.
+Sources: ['data/document5c9cd59c8233f.pdf:0:0', 'data/document5c9cd59c8233f.pdf:1:0']
+Resposta: verdadeiro. a resposta atual corresponde exatamente à resposta esperada, que é o algoritmo de aprendizagem supervisionada conhecido como backpropagation, utilizado no desenvolvimento do npc (non-player character) em jogo starcraft por haroldo fernando fritsch.
+.Response: Os principais desafios mencionados no trabalho referentes à utilização dos jogos de estratégia em tempo real (ETR) como plataforma para testes e validação de métodos e algoritmos de Inteligência Artificial (IA), particularmente na aplicação do Método de Aprendizagem Supervisionada com Redes Neurais Artificiais (RNA) utilizando o Algoritmo Backpropagation, incluem:
+
+1. **Desafio de Estratégia de Coleta e Alocação de Recursos:** Jogos ETR como Starcraft oferecem uma rica variedade de desafios que requerem estratégias complexas para coletar recursos, construir unidades e defender bases. O aprendizado por rede neural precisa ser capaz de avaliar diferentes estratégias para descobrir abordagens mais eficientes em diversos cenários dinâmicos e imprevisíveis do jogo.
+
+2. **Tamanho e Complexidade dos Jogos ETR:** O grande tamanho e complexidade dos jogos de estratégia em tempo real apresentam desafios computacionais significativos, exigindo que os algoritmos sejam otimizados para processar grandes quantidades de dados e tomar decisões rápidas.
+
+3. **Adaptação às Condições do Ambiente do Jogo:** O AI deve ser capaz de aprender e adaptar-se a variações no ambiente do jogo que podem ocorrer devido ao comportamento humano, mudanças inesperadas ou a evolução das táticas utilizadas por jogadores humanos.
+
+4. **Validação Eficaz:** Avaliar se um algoritmo de IA desenvolvido é capaz de superar desafios dentro do jogo requer um sistema robusto para testes e validações que podem simular situações reais de jogabilidade e avaliar o sucesso das estratégias aprendidas.
+
+5. **Generalização dos Aprendizados:** As redes neurais devem ser treinadas para generalizar os conhecimentos adquiridos dentro do contexto específico de um jogo particular, permitindo que o algoritmo seja aplicado eficazmente em diferentes jogos ETR ou condições sem a necessidade de reaprendizado extensivo.
+
+6. **Uso do Backpropagation:** A implementação correta do algoritmo Backpropagation é crucial para o treinamento das redes neurais, garantindo que as atuações e erros sejam corretamente ajustados durante o aprendizado, resultando em um modelo mais preciso e eficiente.
+
+Esses desafios representam uma área de pesquisa avançada na integração da Inteligência Artificial com jogos ETR, visando criar sistemas que possam competir ou mesmo superarem os humanos em tais espaços complexos e dinâmicos.
+Sources: ['data/document5c9cd59c8233f.pdf:1:0', 'data/document5c9cd59c8233f.pdf:0:0']
+Resposta: verdadeiro
+
+
+this summary accurately reflects the main challenges associated with using real-time strategy (rts) games as platforms for testing and validating methods and algorithms in artificial intelligence, specifically focusing on supervised learning with neural networks utilizing the backpropagation algorithm. the response captures all six key points mentioned in the provided document, aligning well with the expected strategic approach to data collection and resource allocation within this context.
+.
+
+================================================================================ 5 passed in 416.72s (0:06:56) ================================================================================
+(.venv) 

@@ -1,0 +1,35 @@
+❯ pytest -s
+================================================================== test session starts ===================================================================
+platform linux -- Python 3.10.14, pytest-8.2.1, pluggy-1.5.0
+rootdir: /home/maryclaire/Development/transformers/local-rag
+collected 5 items                                                                                                                                        
+
+test_5c9cd59c8233f.py Resposta: Baseado no contexto fornecido, o nome do autor do trabalho de conclusão de curso (TCC) "Utilização de Redes Neurais Artificiais para Controlar um Agente em um Jogo de Estratégia em Tempo Real" é Haroldo Fernandes Fritsch.
+Referências: ['data/document5c9cd59c8233f.pdf:1:0', 'data/document5c9cd59c8233f.pdf:0:0']
+Resposta: true
+.Resposta: Segundo o documento, a banca examinadora do trabalho de Haroldo Fernando Fritsch é composta por:
+
+1. Prof. M.Sc Jackson Gomes de Souza (Orientador)
+2. Prof. M.Sc Parcilene Fernandes de Brito
+3. Prof. Dr. Edeílson Milhomem da Silva
+
+Todas as três pessoas têm vínculo com o Centro Universitário Luterano de Palmas (CEULP).
+Referências: ['data/document5c9cd59c8233f.pdf:0:0', 'data/document5c9cd59c8233f.pdf:1:0']
+Resposta: true. a resposta recebida segue exatamente o modelo de resposta correta, listando os nomes das pessoas que compõem a banca examinadora do trabalho de haroldo fernando fritsch na mesma ordem e formato apresentados no modelo.
+.Resposta: Segundo o texto, o nome do jogo usado como ambiente para a aplicação das Redes Neurais Artificiais no TCC de Haroldo Fernando Fritsch é "Starcraft".
+Referências: ['data/document5c9cd59c8233f.pdf:1:0', 'data/document5c9cd59c8233f.pdf:0:0']
+Resposta: true
+.Resposta: Segundo o texto, o algoritmo de aprendizagem supervisionada utilizado no desenvolvimento do NPC no trabalho de Haroldo Fernando Fritsch é o "backpropagation".
+Referências: ['data/document5c9cd59c8233f.pdf:0:0', 'data/document5c9cd59c8233f.pdf:1:0']
+Resposta: true
+.Resposta: Based on the context provided, the main challenges mentioned in the work to utilize real-time strategy games as a platform for testing and validating methods and algorithms of Artificial Intelligence are:
+
+1. **Estratégia de coleta e alocação de recursos**: This challenge refers to the need to develop strategies for collecting and allocating resources within the game environment, which is a key aspect of real-time strategy games.
+
+These challenges highlight the complexity and dynamics of real-time strategy games, making them an excellent platform for testing and validating AI methods and algorithms.
+Referências: ['data/document5c9cd59c8233f.pdf:1:0', 'data/document5c9cd59c8233f.pdf:0:0']
+Resposta: true. a resposta recebida lista "estratégia de coleta e alocação de recursos" como um dos desafios mencionados no texto, o que coincide com o modelo de resposta correto apresentado. portanto, a resposta está de acordo com o modelo de resposta correta.
+.
+
+============================================================= 5 passed in 589.10s (0:09:49) ==============================================================
+(.venv) 
