@@ -1,20 +1,17 @@
 import argparse
 import os
 import shutil
-import chromadb
-
-from langchain.document_loaders.pdf import PyPDFDirectoryLoader
+from embedding_function import get_embedding_function
+from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.schema.document import Document
-from get_embedding_function import get_embedding_function
+from langchain_community.vectorstores import Chroma
+from chromadb import HttpClient
 
-chroma_url = chromadb.HttpClient(host='localhost', port=8000)
-# chroma_client = chromadb.PersistentClient(path="/home/maryclaire/Development/transformers/local-rag/data")
+# chromadb_client = chromadb.HttpClient(host='localhost', port=8000)
 
-
-CHROMA_PATH = chroma_url
 DATA_PATH = "data"
-
+CHROMA_PATH = "chroma"
 
 def main():
 
@@ -36,7 +33,6 @@ def load_documents():
     document_loader = PyPDFDirectoryLoader(DATA_PATH)
     return document_loader.load()
 
-
 def split_documents(documents: list[Document]):
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=800,
@@ -49,9 +45,7 @@ def split_documents(documents: list[Document]):
 
 def add_to_chroma(chunks: list[Document]):
     # Load the existing database.
-    db = chroma_url(
-        persist_directory=CHROMA_PATH, embedding_function=get_embedding_function()
-    )
+    db = Chroma(persist_directory=CHROMA_PATH, collection_name='LocalRAG',client=HttpClient(host='localhost', port=8000), embedding_function=get_embedding_function())
 
     # Calculate Page IDs.
     chunks_with_ids = calculate_chunk_ids(chunks)
@@ -74,7 +68,6 @@ def add_to_chroma(chunks: list[Document]):
         db.persist()
     else:
         print("✅ No new documents to add")
-
 
 def calculate_chunk_ids(chunks):
 
@@ -106,7 +99,7 @@ def calculate_chunk_ids(chunks):
 
 
 def clear_database():
-    if os.path.exists(CHROMA_PATH):
+    if os.path.exists():
         shutil.rmtree(CHROMA_PATH)
 
 
